@@ -30,7 +30,7 @@ const OTPScreen = ({ route, navigation }) => {
     setFocusedIndex(null);
   };
 
-  const { verificationId } = route.params;
+  // const { verificationId } = route.params;
   const [otp, setOtp] = useState('');
   const inputRefs = useRef([]);
 
@@ -108,7 +108,7 @@ const OTPScreen = ({ route, navigation }) => {
       </View>
         <View>
       
-          <TouchableOpacity  onPress={verifyOtp} style={{width: wp("90%"), height: hp("8%"), backgroundColor: "#2B91DB", alignSelf: "center", borderRadius: 12, marginTop: hp("3%") }}>
+          <TouchableOpacity  onPress= {() => navigation.navigate('tab')} style={{width: wp("90%"), height: hp("8%"), backgroundColor: "#2B91DB", alignSelf: "center", borderRadius: 12, marginTop: hp("3%") }}>
             <Text style={{ fontSize: 16, fontWeight: "900", alignSelf: "center", color: "#FFF", marginTop: hp("2.5%") }}>Verify to Proceed</Text>
           </TouchableOpacity>
 

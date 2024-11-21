@@ -201,7 +201,7 @@ const LoginScreen = () => {
 
           {/* onPress={()=>navigation.navigate("otp")}  */}
 
-          <TouchableOpacity onPress = {sendOtp} style={{
+          <TouchableOpacity onPress={()=>navigation.navigate("otp")} style={{
             width: wp("90%"),
             height: hp('8%'),
             backgroundColor: "#2B91DB",
